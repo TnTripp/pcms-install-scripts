@@ -19,16 +19,14 @@ cd pcms
 npm install percli -g
 #Install Peregrine server
 sudo -u $USER percli server install -d
-#if [ ! -d "sling" ]; then
-#	sudo -u $SUDO_USER percli server start
-#fi
-#cd ..
+sudo -u $USER percli server start
+cd ..
 #Copy latest version of peregrine source code
-#sudo -u $SUDO_USER git clone git://github.com/headwirecom/peregrine-cms
-#cd peregrine-cms
+sudo -u $USER git clone git://github.com/headwirecom/peregrine-cms
+cd peregrine-cms
 #Switch to the development branch
-#sudo -u $SUDO_USER git checkout -b origin/develop
+sudo -u $USER git checkout -b origin/develop
 #Build and deploy latest version of Peregrine
-#sudo -u $SUDO_USER percli compile -d
-#cd ..
+sudo -u $USER percli compile -d
+cd ..
 ~                                      
