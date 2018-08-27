@@ -15,15 +15,10 @@ if [ ! -d "pcms" ]; then
         sudo -u $SUDO_USER mkdir pcms
 fi
 cd pcms
-regex="([0-9]+.[0-9]+.[0-9]+)"
-#Install Percli if not already installed
-if [[ ! `percli --version` =~ $regex ]]; then
-        npm install percli -g
-fi
+#Install Percli
+npm install percli -g
 #Install Peregrine server
-if [ ! -d "out" ] || [ ! "$(ls -A ./out)" ]; then
-        sudo -u $SUDO_USER percli server install -d
-fi
+sudo -u $SUDO_USER percli server install -d
 #if [ ! -d "sling" ]; then
 #	sudo -u $SUDO_USER percli server start
 #fi
