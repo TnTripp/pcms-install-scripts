@@ -18,7 +18,7 @@ cd pcms
 #Install Percli
 npm install percli -g
 #Install Peregrine server
-sudo -u $SUDO_USER percli server install -d
+sudo -u $USER percli server install -d
 #if [ ! -d "sling" ]; then
 #	sudo -u $SUDO_USER percli server start
 #fi
